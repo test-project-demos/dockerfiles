@@ -1,0 +1,10 @@
+# Use root/example as user/password credentials
+version: '3.7'
+
+services:
+  db1:
+    container_name: JRebel-Reverse-Proxy
+    image: ilanyu/golang-reverseproxy
+    restart: always
+    ports:
+      - 8888:8888
